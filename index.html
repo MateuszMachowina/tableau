@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>World Weather Economic Dashboard</title>
+  <title>Dashboards</title>
   <style>
     body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
+      background: #111;
+      color: white;
       text-align: center;
+    }
+    .nav-buttons {
+      margin: 20px;
+    }
+    .nav-buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #444;
+      color: white;
+      cursor: pointer;
+    }
+    .nav-buttons button:hover {
+      background-color: #666;
+    }
+    .dashboard {
+      display: none;
+    }
+    .dashboard.active {
+      display: block;
     }
     .tableauPlaceholder {
       margin: 0 auto;
@@ -18,43 +42,89 @@
 </head>
 <body>
 
-  <h1>🌍 World Weather Economic Dashboard</h1>
+  <h1>📊 Dashboard Viewer</h1>
 
-  <div class='tableauPlaceholder' id='viz1745354073317' style='position: relative'>
-    <noscript>
-      <a href='https://mateuszmachowina.github.io/'>
-        <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/7W/7WSHW5STF/1_rss.png' style='border: none' />
-      </a>
-    </noscript>
-    <object class='tableauViz' style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='path' value='shared&#47;7WSHW5STF' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image' value='https://public.tableau.com/static/images/7W/7WSHW5STF/1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-      <param name='filter' value='publish=yes' />
-    </object>
+  <div class="nav-buttons">
+    <button onclick="showDashboard('weather')">🌍 World Weather</button>
+    <button onclick="showDashboard('steam')">🎮 Steam Games</button>
+  </div>
+
+  <!-- World Weather Dashboard -->
+  <div id="weather" class="dashboard active">
+    <h2>🌍 World Weather Economic Dashboard</h2>
+    <div class='tableauPlaceholder' id='viz1' style='position: relative'>
+      <noscript>
+        <a href='https://mateuszmachowina.github.io/'>
+          <img alt='Dashboard 1' src='https://public.tableau.com/static/images/7W/7WSHW5STF/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared&#47;7WSHW5STF' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/7W/7WSHW5STF/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+  </div>
+
+  <!-- Steam Games Dashboard -->
+  <div id="steam" class="dashboard">
+    <h2>🎮 Steam Games Peak CCU Dashboard</h2>
+    <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Steam Games Main Dashboard' src='https://public.tableau.com/static/images/St/SteamGamesPeakCCUDashboard/SteamGamesMainDashboard/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='SteamGamesPeakCCUDashboard&#47;SteamGamesMainDashboard' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/St/SteamGamesPeakCCUDashboard/SteamGamesMainDashboard/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
   </div>
 
   <script type='text/javascript'>
-    var divElement = document.getElementById('viz1745354073317');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    if (divElement.offsetWidth > 800) {
-      vizElement.style.width = '1000px'; vizElement.style.height = '827px';
-    } else if (divElement.offsetWidth > 500) {
-      vizElement.style.width = '1000px'; vizElement.style.height = '827px';
-    } else {
-      vizElement.style.width = '100%'; vizElement.style.height = '727px';
+    function showDashboard(id) {
+      document.querySelectorAll('.dashboard').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
     }
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+    // Tableau JS API loading
+    const loadViz = (id) => {
+      var divElement = document.getElementById(id);
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+      } else {
+        vizElement.style.width = '100%'; vizElement.style.height = '727px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    }
+
+    loadViz('viz1');
+    loadViz('viz2');
   </script>
 
 </body>
