@@ -30,13 +30,17 @@
     }
     .dashboard {
       display: none;
+      padding: 20px;
+      min-height: 100vh;
     }
     .dashboard.active {
       display: block;
     }
     .tableauPlaceholder {
       margin: 0 auto;
-      max-width: 1200px;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: auto;
     }
   </style>
 </head>
@@ -75,7 +79,7 @@
     </div>
   </div>
 
-  <!-- Steam Games Dashboard (updated embed) -->
+  <!-- Steam Games Dashboard -->
   <div id="steam" class="dashboard">
     <h2>🎮 Steam Games Peak CCU Dashboard</h2>
     <div class='tableauPlaceholder' id='viz2' style='position: relative'>
@@ -108,16 +112,14 @@
       document.getElementById(id).classList.add('active');
     }
 
+    // Load Tableau dashboards
     const loadViz = (id) => {
       var divElement = document.getElementById(id);
       var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1200px'; vizElement.style.height = '960px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1000px'; vizElement.style.height = '800px';
-      } else {
-        vizElement.style.width = '100%'; vizElement.style.height = '700px';
-      }
+
+      vizElement.style.width = '1200px';
+      vizElement.style.height = '960px';
+
       var scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
