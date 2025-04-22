@@ -21,7 +21,7 @@ This repository showcases my Tableau projects, focused on interactive dashboards
        
 ## Files in This Repository
 
-  - `index.html` – Embeds the published Tableau dashboard hosted via GitHub Pages.
+  - `index.html` – Embeds the published Tableau dashboard hosted on `https://mateuszmachowina.github.io/tableau/`
 
 ## Hosting
 
