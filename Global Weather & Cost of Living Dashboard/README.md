@@ -32,7 +32,6 @@ The dashboard consists of **two main views**:
 
 ## 📁 Project Files
 
-- `index.html` – Webpage with embedded Tableau dashboards (can be hosted with GitHub Pages)
 - `Global Weather & Cost of Living Dashboard.twb` – Tableau Workbook containing all logic, visuals, and data connections
 
 ---
