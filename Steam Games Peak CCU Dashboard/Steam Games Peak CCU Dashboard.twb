@@ -1,0 +1,2740 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <SpecificWebTargetsForActions />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='SteamGamesPeakCCUDashboard' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Arkusz1 (export-table-powerbi-steam-games-dashboard)' inline='true' name='federated.0cwqfos19rokt51h6xc291vhwby9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='export-table-powerbi-steam-games-dashboard' name='excel-direct.1vh71er0wvk3l413yom3t1lt3ick'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/github/tableau/tableau-recreated-steam-games-dashboard/export-table-powerbi-steam-games-dashboard.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1vh71er0wvk3l413yom3t1lt3ick' name='Arkusz1' table='[Arkusz1$]' type='table'>
+          <columns gridOrigin='A1:AW10001:no:A1:AW10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='AppID' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Release date' ordinal='2' />
+            <column datatype='integer' name='Peak CCU' ordinal='3' />
+            <column datatype='integer' name='Required age' ordinal='4' />
+            <column datatype='string' name='Price' ordinal='5' />
+            <column datatype='integer' name='DLC count' ordinal='6' />
+            <column datatype='string' name='About the game' ordinal='7' />
+            <column datatype='string' name='Supported languages' ordinal='8' />
+            <column datatype='string' name='Full audio languages' ordinal='9' />
+            <column datatype='string' name='Reviews' ordinal='10' />
+            <column datatype='string' name='Header image' ordinal='11' />
+            <column datatype='string' name='Website' ordinal='12' />
+            <column datatype='string' name='Support url' ordinal='13' />
+            <column datatype='string' name='Support email' ordinal='14' />
+            <column datatype='string' name='Windows' ordinal='15' />
+            <column datatype='string' name='Mac' ordinal='16' />
+            <column datatype='string' name='Linux' ordinal='17' />
+            <column datatype='integer' name='Metacritic score' ordinal='18' />
+            <column datatype='string' name='Metacritic url' ordinal='19' />
+            <column datatype='integer' name='Positive' ordinal='20' />
+            <column datatype='integer' name='Negative' ordinal='21' />
+            <column datatype='integer' name='Achievements' ordinal='22' />
+            <column datatype='integer' name='Recommendations' ordinal='23' />
+            <column datatype='string' name='Notes' ordinal='24' />
+            <column datatype='integer' name='Average playtime forever' ordinal='25' />
+            <column datatype='integer' name='Average playtime two weeks' ordinal='26' />
+            <column datatype='integer' name='Median playtime forever' ordinal='27' />
+            <column datatype='integer' name='Median playtime two weeks' ordinal='28' />
+            <column datatype='string' name='Developers' ordinal='29' />
+            <column datatype='string' name='Publishers' ordinal='30' />
+            <column datatype='string' name='Categories' ordinal='31' />
+            <column datatype='string' name='Genres' ordinal='32' />
+            <column datatype='string' name='Tags' ordinal='33' />
+            <column datatype='integer' name='min.Owners' ordinal='34' />
+            <column datatype='integer' name='max.Owners' ordinal='35' />
+            <column datatype='string' name='Avg Playtime Forever Formatted' ordinal='36' />
+            <column datatype='string' name='Avg Playtime two weeks Formatted' ordinal='37' />
+            <column datatype='string' name='Median playtime forever Formatted' ordinal='38' />
+            <column datatype='string' name='Median playtime two weeks Formatted' ordinal='39' />
+            <column datatype='integer' name='avg.Owners' ordinal='40' />
+            <column datatype='real' name='% 0f Positive Reviews' ordinal='41' />
+            <column datatype='real' name='% 0f Negative Reviews' ordinal='42' />
+            <column datatype='string' name='Main Category' ordinal='43' />
+            <column datatype='string' name='Main Genre' ordinal='44' />
+            <column datatype='string' name='Filtered Main Genre' ordinal='45' />
+            <column datatype='string' name='Top 3 Categories' ordinal='46' />
+            <column datatype='integer' name='Global Playtime Forever' ordinal='47' />
+            <column datatype='string' name='New Name' ordinal='48' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AW10001:no:A1:AW10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AppID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AppID]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>AppID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Release date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Release date]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Release date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Peak CCU</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Peak CCU]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Peak CCU</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Required age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Required age]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Required age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DLC count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DLC count]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>DLC count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>About the game</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[About the game]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>About the game</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supported languages</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supported languages]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Supported languages</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full audio languages</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Full audio languages]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Full audio languages</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reviews</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reviews]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Reviews</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Header image</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Header image]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Header image</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Website</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Website]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Website</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Support url]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Support url</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Support email</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Support email]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Support email</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Windows</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Windows]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Windows</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mac</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mac]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Mac</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Linux</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Linux]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Linux</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metacritic score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Metacritic score]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Metacritic score</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metacritic url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Metacritic url]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Metacritic url</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positive</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Positive]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Positive</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Negative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Negative]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Negative</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Achievements</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Achievements]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Achievements</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recommendations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recommendations]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Recommendations</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Notes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Notes]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Notes</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average playtime forever</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average playtime forever]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Average playtime forever</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average playtime two weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average playtime two weeks]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Average playtime two weeks</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median playtime forever</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Median playtime forever]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Median playtime forever</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median playtime two weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Median playtime two weeks]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Median playtime two weeks</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Developers</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Developers]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Developers</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publishers</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Publishers]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Publishers</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categories]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Categories</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Genres]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Genres</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tags]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Tags</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min.Owners</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[min.Owners]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>min.Owners</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max.Owners</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[max.Owners]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>max.Owners</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Playtime Forever Formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg Playtime Forever Formatted]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Avg Playtime Forever Formatted</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Playtime two weeks Formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Avg Playtime two weeks Formatted]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Avg Playtime two weeks Formatted</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median playtime forever Formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Median playtime forever Formatted]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Median playtime forever Formatted</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median playtime two weeks Formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Median playtime two weeks Formatted]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Median playtime two weeks Formatted</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg.Owners</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avg.Owners]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>avg.Owners</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% 0f Positive Reviews</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% 0f Positive Reviews]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>% 0f Positive Reviews</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% 0f Negative Reviews</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% 0f Negative Reviews]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>% 0f Negative Reviews</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Main Category]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Main Category</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Main Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Main Genre]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Main Genre</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Filtered Main Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Filtered Main Genre]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Filtered Main Genre</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Top 3 Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Top 3 Categories]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Top 3 Categories</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Global Playtime Forever</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Global Playtime Forever]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>Global Playtime Forever</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[New Name]</local-name>
+            <parent-name>[Arkusz1]</parent-name>
+            <remote-alias>New Name</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPL_RPL_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='p0.00%' name='[% 0f Positive Reviews]' role='measure' type='quantitative' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:\% 0f Positive Reviews:qk]&quot;' value='Positive Reviews' />
+          <alias key='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:Calculation_1190639153667596288:qk]&quot;' value='Global Playtime Forever' />
+          <alias key='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Calculation_1190639153670225921:qk]&quot;' value='Average Playtime Forever' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[AppID]' role='dimension' type='ordinal' />
+      <column caption='Global Playtime Forever Formatted' datatype='real' default-format='c#,##0.00&quot; M years&quot;;-#,##0.00&quot; M years&quot;' name='[Calculation_1190639153667596288]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Global Playtime Forever] / (60 * 24 * 365.25 * 1000000)' />
+      </column>
+      <column caption='Average playtime forever hours' datatype='real' default-format='c#,##0.00&quot; hours&quot;;-#,##0.00&quot; hours&quot;' name='[Calculation_1190639153670225921]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Average playtime forever]/60' />
+      </column>
+      <column caption='Game Name' datatype='string' name='[New Name]' role='dimension' type='nominal' />
+      <column caption='Arkusz1' datatype='table' name='[__tableau_internal_object_id__].[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]' role='measure' type='quantitative' />
+      <column-instance column='[% 0f Positive Reviews]' derivation='Avg' name='[avg:% 0f Positive Reviews:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1190639153667596288]' derivation='Avg' name='[avg:Calculation_1190639153667596288:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1190639153670225921]' derivation='Sum' name='[sum:Calculation_1190639153670225921:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (AppID)' hidden='true' name='[Action (AppID)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[AppID]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Game Name)' hidden='true' name='[Action (Game Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[New Name]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/MATEUSZ/AppData/Local/Temp/TableauTemp/#TableauTemp_1izviez0nvcqu015n31u31rfy1rv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/22/2025 11:04:12 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AppID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AppID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AppID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71716</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71716</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Release date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Release date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Release date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7788</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Peak CCU</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Peak CCU]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Peak CCU</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>492</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Required age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Required age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Required age</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>459</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DLC count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DLC count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DLC count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>About the game</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[About the game]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>About the game</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67013</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supported languages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supported languages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supported languages</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2887</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Full audio languages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Full audio languages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Full audio languages</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>448</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reviews</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reviews</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16350</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Header image</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Header image]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Header image</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71716</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Website</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Website]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Website</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19443</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Support url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Support url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Support url</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13592</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Support email</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Support email]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Support email</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16833</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Windows</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Windows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Windows</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mac</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mac]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mac</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Linux</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Linux]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Linux</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metacritic score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Metacritic score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metacritic score</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metacritic url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Metacritic url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metacritic url</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6080</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Positive</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Positive]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Positive</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1733</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Negative</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Negative]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Negative</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1027</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Achievements</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Achievements]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Achievements</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>207</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recommendations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recommendations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recommendations</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2484</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Notes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Notes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Notes</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11069</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average playtime forever</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Average playtime forever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average playtime forever</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1786</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average playtime two weeks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Average playtime two weeks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average playtime two weeks</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1669</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Median playtime forever</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Median playtime forever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Median playtime forever</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1746</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Median playtime two weeks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Median playtime two weeks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Median playtime two weeks</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1669</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Developers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Developers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Developers</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24540</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publishers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Publishers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publishers</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15625</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Categories</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genres</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1350</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tags</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26278</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>min.Owners</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[min.Owners]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>min.Owners</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max.Owners</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[max.Owners]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max.Owners</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Playtime Forever Formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Avg Playtime Forever Formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Playtime Forever Formatted</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1786</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Playtime two weeks Formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Avg Playtime two weeks Formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Playtime two weeks Formatted</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1669</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Median playtime forever Formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Median playtime forever Formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Median playtime forever Formatted</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1746</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Median playtime two weeks Formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Median playtime two weeks Formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Median playtime two weeks Formatted</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1669</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg.Owners</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[avg.Owners]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg.Owners</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% 0f Positive Reviews</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% 0f Positive Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% 0f Positive Reviews</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Arkusz1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3917</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% 0f Negative Reviews</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% 0f Negative Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% 0f Negative Reviews</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Arkusz1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3917</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Main Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Main Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Main Category</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Main Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Main Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Main Genre</remote-alias>
+              <ordinal>44</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Filtered Main Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Filtered Main Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Filtered Main Genre</remote-alias>
+              <ordinal>45</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Top 3 Categories</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Top 3 Categories]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Top 3 Categories</remote-alias>
+              <ordinal>46</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Global Playtime Forever</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Global Playtime Forever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Global Playtime Forever</remote-alias>
+              <ordinal>47</ordinal>
+              <family>Arkusz1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3465</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>New Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[New Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>New Name</remote-alias>
+              <ordinal>48</ordinal>
+              <family>Arkusz1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71716</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPL_RPL' />
+              <object-id>[Arkusz1_CD2F9EBEB1514FB59C812A06159268D1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Arkusz1' id='Arkusz1_CD2F9EBEB1514FB59C812A06159268D1'>
+            <properties context=''>
+              <relation connection='excel-direct.1vh71er0wvk3l413yom3t1lt3ick' name='Arkusz1' table='[Arkusz1$]' type='table'>
+                <columns gridOrigin='A1:AW10001:no:A1:AW10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='AppID' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Release date' ordinal='2' />
+                  <column datatype='integer' name='Peak CCU' ordinal='3' />
+                  <column datatype='integer' name='Required age' ordinal='4' />
+                  <column datatype='string' name='Price' ordinal='5' />
+                  <column datatype='integer' name='DLC count' ordinal='6' />
+                  <column datatype='string' name='About the game' ordinal='7' />
+                  <column datatype='string' name='Supported languages' ordinal='8' />
+                  <column datatype='string' name='Full audio languages' ordinal='9' />
+                  <column datatype='string' name='Reviews' ordinal='10' />
+                  <column datatype='string' name='Header image' ordinal='11' />
+                  <column datatype='string' name='Website' ordinal='12' />
+                  <column datatype='string' name='Support url' ordinal='13' />
+                  <column datatype='string' name='Support email' ordinal='14' />
+                  <column datatype='string' name='Windows' ordinal='15' />
+                  <column datatype='string' name='Mac' ordinal='16' />
+                  <column datatype='string' name='Linux' ordinal='17' />
+                  <column datatype='integer' name='Metacritic score' ordinal='18' />
+                  <column datatype='string' name='Metacritic url' ordinal='19' />
+                  <column datatype='integer' name='Positive' ordinal='20' />
+                  <column datatype='integer' name='Negative' ordinal='21' />
+                  <column datatype='integer' name='Achievements' ordinal='22' />
+                  <column datatype='integer' name='Recommendations' ordinal='23' />
+                  <column datatype='string' name='Notes' ordinal='24' />
+                  <column datatype='integer' name='Average playtime forever' ordinal='25' />
+                  <column datatype='integer' name='Average playtime two weeks' ordinal='26' />
+                  <column datatype='integer' name='Median playtime forever' ordinal='27' />
+                  <column datatype='integer' name='Median playtime two weeks' ordinal='28' />
+                  <column datatype='string' name='Developers' ordinal='29' />
+                  <column datatype='string' name='Publishers' ordinal='30' />
+                  <column datatype='string' name='Categories' ordinal='31' />
+                  <column datatype='string' name='Genres' ordinal='32' />
+                  <column datatype='string' name='Tags' ordinal='33' />
+                  <column datatype='integer' name='min.Owners' ordinal='34' />
+                  <column datatype='integer' name='max.Owners' ordinal='35' />
+                  <column datatype='string' name='Avg Playtime Forever Formatted' ordinal='36' />
+                  <column datatype='string' name='Avg Playtime two weeks Formatted' ordinal='37' />
+                  <column datatype='string' name='Median playtime forever Formatted' ordinal='38' />
+                  <column datatype='string' name='Median playtime two weeks Formatted' ordinal='39' />
+                  <column datatype='integer' name='avg.Owners' ordinal='40' />
+                  <column datatype='real' name='% 0f Positive Reviews' ordinal='41' />
+                  <column datatype='real' name='% 0f Negative Reviews' ordinal='42' />
+                  <column datatype='string' name='Main Category' ordinal='43' />
+                  <column datatype='string' name='Main Genre' ordinal='44' />
+                  <column datatype='string' name='Filtered Main Genre' ordinal='45' />
+                  <column datatype='string' name='Top 3 Categories' ordinal='46' />
+                  <column datatype='integer' name='Global Playtime Forever' ordinal='47' />
+                  <column datatype='string' name='New Name' ordinal='48' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Hyperlink1' name='[Action1_5EF07C3520584280A2CA97468EC49FFB]'>
+      <activation type='on-select' />
+      <source dashboard='Steam Games Main Dashboard' type='sheet' worksheet='Peak CCU' />
+      <link caption='' expression='&lt;ATTR([Header image])&gt;'>
+        <url-action-type>specific-zone</url-action-type>
+        <url-action-target>5</url-action-target>
+      </link>
+    </action>
+    <action caption='Filter1' name='[Action2_C48B5C939EDA4518B9A61D9103BCB408]'>
+      <activation type='on-select' />
+      <source dashboard='Steam Games Main Dashboard' type='sheet' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:KPI?%5Bfederated.0cwqfos19rokt51h6xc291vhwby9%5D.%5BNew%20Name%5D~s0=&lt;[federated.0cwqfos19rokt51h6xc291vhwby9].[New Name]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='single-select' value='' />
+        <param name='target' value='KPI' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='Arkusz1 (export-table-powerbi-steam-games-dashboard)' name='federated.0cwqfos19rokt51h6xc291vhwby9' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0cwqfos19rokt51h6xc291vhwby9'>
+      <column datatype='string' name='[Header image]' role='dimension' type='nominal' />
+      <column caption='Game Name' datatype='string' name='[New Name]' role='dimension' type='nominal' />
+      <column-instance column='[Header image]' derivation='Attribute' name='[attr:Header image:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>&lt;Sheet Name&gt; for &lt;</run>
+            <run bold='true' fontcolor='#ffffff'>[federated.0cwqfos19rokt51h6xc291vhwby9].[New Name]</run>
+            <run bold='true' fontcolor='#ffffff'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Arkusz1 (export-table-powerbi-steam-games-dashboard)' name='federated.0cwqfos19rokt51h6xc291vhwby9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwqfos19rokt51h6xc291vhwby9'>
+            <column datatype='real' default-format='p0.00%' name='[% 0f Positive Reviews]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Average playtime forever]' role='measure' type='quantitative' />
+            <column caption='Global Playtime Forever Formatted' datatype='real' default-format='c#,##0.00&quot; M years&quot;;-#,##0.00&quot; M years&quot;' name='[Calculation_1190639153667596288]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Global Playtime Forever] / (60 * 24 * 365.25 * 1000000)' />
+            </column>
+            <column caption='Average playtime forever hours' datatype='real' default-format='c#,##0.00&quot; hours&quot;;-#,##0.00&quot; hours&quot;' name='[Calculation_1190639153670225921]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Average playtime forever]/60' />
+            </column>
+            <column datatype='integer' name='[Global Playtime Forever]' role='measure' type='quantitative' />
+            <column caption='Game Name' datatype='string' name='[New Name]' role='dimension' type='nominal' />
+            <column-instance column='[% 0f Positive Reviews]' derivation='Avg' name='[avg:% 0f Positive Reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1190639153667596288]' derivation='Avg' name='[avg:Calculation_1190639153667596288:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[New Name]' derivation='None' name='[none:New Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Average playtime forever]' derivation='Sum' name='[sum:Average playtime forever:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1190639153670225921]' derivation='Sum' name='[sum:Calculation_1190639153670225921:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:\% 0f Positive Reviews:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:Calculation_1190639153667596288:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Calculation_1190639153670225921:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:\% 0f Positive Reviews:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[avg:Calculation_1190639153667596288:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Average playtime forever:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0cwqfos19rokt51h6xc291vhwby9].[Action (Game Name)]'>
+            <groupfilter function='member' level='[New Name]' member='&quot;Team Fortress 2&quot;' user:ui-action-filter='[Action2_C48B5C939EDA4518B9A61D9103BCB408]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]'>
+            <groupfilter function='level-members' level='[none:New Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]</column>
+            <column>[federated.0cwqfos19rokt51h6xc291vhwby9].[Action (Game Name)]</column>
+            <column>[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]' value='374' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' value='22' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]' value='40' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]' value='false' />
+            <format attr='vertical-align' value='center' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' scope='cols' value='#ffffff' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='div-level' scope='cols' value='1' />
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0cwqfos19rokt51h6xc291vhwby9].[Multiple Values]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]</rows>
+        <cols>[federated.0cwqfos19rokt51h6xc291vhwby9].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0805AC47-E100-469B-BCD6-ED35D0E759F5}' />
+    </worksheet>
+    <worksheet name='Peak CCU'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Arkusz1 (export-table-powerbi-steam-games-dashboard)' name='federated.0cwqfos19rokt51h6xc291vhwby9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cwqfos19rokt51h6xc291vhwby9'>
+            <column datatype='string' name='[Header image]' role='dimension' type='nominal' />
+            <column caption='Game Name' datatype='string' name='[New Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Peak CCU]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Price]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Publishers]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Release date]' role='dimension' type='nominal' />
+            <column-instance column='[Header image]' derivation='Attribute' name='[attr:Header image:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Price]' derivation='Attribute' name='[attr:Price:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Publishers]' derivation='Attribute' name='[attr:Publishers:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Release date]' derivation='Attribute' name='[attr:Release date:nk]' pivot='key' type='nominal' />
+            <column-instance column='[New Name]' derivation='None' name='[none:New Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Peak CCU]' derivation='Sum' name='[sum:Peak CCU:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='title' class='0' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]' scope='cols' value='Peak Concurrent Players' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]' value='248' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='font-size' scope='cols' value='11' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]' palette='sunrise_sunset_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-size' value='10' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff4b' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]' />
+              <tooltip column='[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Header image:nk]' />
+              <tooltip column='[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Publishers:nk]' />
+              <tooltip column='[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Release date:nk]' />
+              <tooltip column='[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Price:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575'>Game Name:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Peak CCU:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]> concurrent players]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Publisher:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Publishers:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Release Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Release date:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Price:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0cwqfos19rokt51h6xc291vhwby9].[attr:Price:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]</rows>
+        <cols>[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]</cols>
+      </table>
+      <simple-id uuid='{61C2182C-53C3-4EB7-B782-DC4D89EB79CE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Steam Games Main Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='76000' id='3' name='Peak CCU' show-title='false' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='22000' id='9' param='horz' type-v2='layout-flow' w='38100' x='800' y='77000'>
+            <zone fixed-size='671' forceUpdate='' h='22000' id='5' is-fixed='true' param='https://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg?t=1592263852' type-v2='web' w='38100' x='800' y='77000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='22000' id='10' name='KPI' show-title='false' w='60300' x='38900' y='77000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop' />
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='47' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='76000' id='3' is-fixed='true' name='Peak CCU' show-title='false' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='168' forceUpdate='' h='22000' id='5' is-fixed='true' param='https://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg?t=1592263852' type-v2='web' w='38100' x='800' y='77000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='168' h='22000' id='10' is-fixed='true' name='KPI' show-title='false' w='60300' x='38900' y='77000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BE52F684-3F9A-445A-B952-6AD8D89C9957}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Peak CCU'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0cwqfos19rokt51h6xc291vhwby9].[sum:Peak CCU:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:Header image:nk]</field>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:Name:nk]</field>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]</field>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:Price:nk]</field>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:Publishers:nk]</field>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:Release date:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A44F4DEF-2BEF-4914-ABD7-F3415442032F}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cwqfos19rokt51h6xc291vhwby9].[none:New Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D6D7E84E-1EA0-40BD-A6B1-B735727924C9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Steam Games Main Dashboard'>
+      <viewpoints>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Peak CCU'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device name='Large Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{BA88866E-16D3-4DE6-845F-E2F0C8E8C037}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='84' name='KPI' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Peak CCU' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Steam Games Main Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
