@@ -41,6 +41,41 @@
       width: 100%;
       overflow: auto;
     }
+
+    .tip-container {
+      margin-top: 10px;
+    }
+
+    .tip {
+      display: inline-block;
+      font-size: 14px;
+      color: #ccc;
+      cursor: help;
+      position: relative;
+    }
+
+    .tip::after {
+      content: "Bottom right corner → Change display settings → Desktop Layout";
+      visibility: hidden;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 6px 10px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 1;
+    }
+
+    .tip:hover::after {
+      visibility: visible;
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -76,6 +111,9 @@
         <param name='filter' value='publish=yes' />
       </object>
     </div>
+    <div class="tip-container">
+      <span class="tip">It is recommended to use Desktop Layout for the best experience.</span>
+    </div>
   </div>
 
   <!-- Steam Games Dashboard -->
@@ -103,6 +141,9 @@
         <param name='language' value='en-US' />
         <param name='filter' value='publish=yes' />
       </object>
+    </div>
+    <div class="tip-container">
+      <span class="tip">It is recommended to use Desktop Layout for the best experience.</span>
     </div>
   </div>
 
