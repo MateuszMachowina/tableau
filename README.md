@@ -1,10 +1,11 @@
 # 📈 Tableau Projects 
 
 This repository showcases my Tableau projects, focused on interactive dashboards that blend economic and climate data from around the world.
+
 **Live Dashboard**:  
 🚀 [View My Tableau Dashboards!](https://mateuszmachowina.github.io/tableau/)
 
-## Projects
+## 📊 Projects
 
 1. **World Weather Economic Dashboard 🌍**
 
@@ -29,11 +30,11 @@ This repository showcases my Tableau projects, focused on interactive dashboards
 - **Original Dataset**:
   - 🎮 [Steam Games Dataset on Kaggle by Mexwell](https://www.kaggle.com/datasets/mexwell/steamgames)
 
-## Files in This Repository
+## 📂 Files in This Repository
 
   - `index.html` – Embeds the published Tableau dashboards hosted on `https://mateuszmachowina.github.io/tableau/`
 
-## Hosting
+## 🔗 Hosting
 
 The dashboards are published via Tableau Public and embedded with HTML in this repo for web hosting.
 
