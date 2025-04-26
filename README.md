@@ -1,4 +1,4 @@
-# Tableau Projects 📈
+# 📈 Tableau Projects 
 
 This repository showcases my Tableau projects, focused on interactive dashboards that blend economic and climate data from around the world.
 **Live Dashboard**:  
